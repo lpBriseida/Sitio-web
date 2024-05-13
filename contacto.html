@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos!!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: beige; /* Color de fondo */
+            font-size: 16px;
+       }
+       .navbar {
+           border-radius: 0;
+       }
+       .navbar-brand {
+           color: #fff; /* Color del texto del logo */
+       }
+       .navbar-nav li a {
+           color: #fff; /* Color del texto del enlace en la barra de navegación */
+       }
+       .jumbotron {
+           border-radius: 0;
+       }
+       /* Paleta de colores */
+       .color-primary {
+           color: #88a51e; /* Color primario */
+       }
+       .color-secondary {
+           color: #dcff82; /* Color secundario */
+       }
+       .bg-primary {
+        background-color: #c9df79 !important; /* Color de fondo */
+       }
+   </style>
+</head>
+<body>
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-default bg-primary">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand color-primary" href="inicio.html">Inicio</a>
+           </div>
+           <div id="navbar" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                   <li><a href="informacion.html">Informacion</a></li>
+                   <li><a href="consejos.html">Consejos</a></li>
+                   <li><a href="energias.html">Energias</a></li>
+                   <li><a href="acciones.html">Acciones</a></li>
+                   <li><a href="contacto.html">Contacto</a></li>
+               </ul>
+           </div>
+       </div>
+   </nav>
+   <!-- Contenido principal -->
+   <div class="container">
+    <h2>Envianos tus comentarios!!</h2>
+    <p class="lead">Llena el siguiente formulario si lo deseas</p>
+
+
+    <form id="commentForm">
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+  <div>
+    <button type="submit">Enviar comentario</button>
+  </div>
+</form>
+
+<div id="commentList">
+  <!-- Los comentarios se cargarán aquí dinámicamente -->
+</div>
+
+</body>
+</html>
